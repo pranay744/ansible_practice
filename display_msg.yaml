@@ -8,5 +8,6 @@
    tasks:
    - name: Display the name
      debug:
-      - msg: "My first_name is {{ first_name }}"
-      - msg: "My Last_name: is {{ Last_name  }}"
+       msg: 
+        - "My first_name is {{ first_name }}"
+        - "My Last_name: is {{ Last_name  }}"
