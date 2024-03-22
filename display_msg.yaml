@@ -1,0 +1,12 @@
+#!/bin/ansible-playbook
+ - name: Displaying the Username
+   hosts: all
+   become: yes
+   vars:
+    first_name: Pranaysagar Reddy
+    Last_name: Kadapanavenkata
+   tasks:
+   - name: Display the name
+     debug:
+      - msg: "My first_name is {{ first_name }}"
+      - msg: "My Last_name: is {{ Last_name  }}"
